@@ -1,0 +1,58 @@
+.container{
+   
+    padding: 0;
+    margin: 0 auto;
+    max-width: 80%;
+    border: 0px solid red;
+    display: flex;
+    justify-content: center;
+}
+#home{
+    
+    padding: 0;
+    margin: 0 auto;
+    max-width: 50%;
+    border: 0px solid red;
+   
+    background-image:        
+        url(img/fundo.png);}
+
+#fundo2{
+    padding: 0;
+    margin: 0 auto;
+    max-width: 50%;
+    border: 0px solid red;
+    background-image:url(img/fundo2.png) ;
+}
+
+.link{      
+    float: right;
+    padding-top:  30px;
+    
+}
+
+.logo{
+    float: left;
+    padding-top: 30px;
+   
+}
+
+.capa{
+    
+   
+    padding-top: 1.5%;
+    
+}
+
+
+.texto{
+    text-align: justify;
+}
+
+
+
+   
+
+.footer{
+      text-align: center;
+}
