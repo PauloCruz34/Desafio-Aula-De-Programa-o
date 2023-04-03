@@ -1,16 +1,16 @@
-from flask import Flask, render_template# """ importa classe flasc """
+from flask import Flask, render_template # """ importa classe flasc """
 
 app = Flask("__name__") #""" cria uma instnância dessa classe """
 
 @app.route("/")          #""" cria rotas com o decorator """
-def index():
-    return render_template("index.html")
+def home():
+    return render_template ("index.html")
 
-@app.route("/")          
+@app.route("/quemsomos")          
 def quemsomos():
-    return render_template("/quemsomos.html")
+    return render_template ("/quem_somos.html")
 
-@app.route("/")          
+@app.route("/contatos")          
 def contatos():
-    return render_template("/contatos.html")
+    return render_template ("/contatos.html")
 
