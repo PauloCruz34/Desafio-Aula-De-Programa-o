@@ -2,32 +2,32 @@
    
     padding: 0;
     margin: 0 auto;
-    max-width: 80%;
-    border: px solid red;
+    max-width: 70%;
+    border: 1px solid red;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
-#home{
+.home{
     
     padding: 0;
     margin: 0 auto;
-    max-width: 50%;
+    max-width: 100%;
     border: 0px solid red;
    
     background-image:        
-        url(../css/style.css);}
+        url(../imagens/fundo.png);}
 
-#fundo2{
+.fundo2{
     padding: 0;
     margin: 0 auto;
-    max-width: 50%;
+    max-width: 100%;
     border: 0px solid red;
-    background-image:url(../css/style.css) ;
+    background-image:url(../imagens/fundo2.png) ;
 }
 
 .link{      
     float: right;
-    padding-top:  30px;
+    padding-top:  8%;
     
 }
 
@@ -39,8 +39,9 @@
 
 .capa{
     
-   
-    padding-top: 1.5%;
+    display: flex;
+    justify-content: center;
+    padding-top: 0.9%;
     
 }
 
@@ -53,6 +54,6 @@
 
    
 
-.footer{
+.rodape{
       text-align: center;
 }
