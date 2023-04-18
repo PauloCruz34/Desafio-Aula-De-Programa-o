@@ -12,5 +12,5 @@ def quemsomos():
 
 @app.route("/contatos")          
 def contatos():
-    return render_template ("/contatos.html")
+    return render_template ("/contatos.html") 
 
