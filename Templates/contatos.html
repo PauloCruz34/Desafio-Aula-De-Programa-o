@@ -17,18 +17,21 @@
             </div>
             <div class="container">
                 
-              
+                <form method="post" action="/contatos">
             
                 <div class="form">
-                    <form>
-                    Seu e-mail:<br>
-                    <input type="text" name="e-mail" required> <br>
-                    Asunto: <br>
-                    <input type="text" name="assunto"required> <br>
-                    Descrição: <br>
-                    <input type="text" name="descrição"required> <br>
-                    <input type="submit" value="Enviar">   
+                    <form method="post" action="/contatos">
+                        Seu e-mail:<br>
+                        <input type="email" name="email" required> <br>
+                        Asunto: <br>
+                        <input type="text" name="assunto" required> <br>
+                        Descrição: <br>
+                        <input type="text" name="descricao" required> <br>
+                        <input type="submit" value="Enviar">   
+                    </form>
                 </div>
             </div> 
+
+        
             
     {%endblock%}

@@ -1,17 +1,7 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title>Users</title>
+<div class="fundo2">
+    {% extends 'base.html' %}
 
-  <link rel="stylesheet" type="text/css" href="../static/css/Normalize.css">
-  <link rel="stylesheet" type="text/css" href="../static/css/style.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
-  
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
-</head>
-<body>
+    {% block conteudo %}
     
 
 <table id="users" class="display">
@@ -77,4 +67,4 @@
     } );
     </script>
   
-</body>
+  {%endblock%}

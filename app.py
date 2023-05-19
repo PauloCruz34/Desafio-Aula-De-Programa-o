@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 
 # conexão com o banco de dados
-app.config['MYSQL_Host'] = 'localhost' # 127.0.0.1
+app.config['MYSQL_Host'] = 'localhost'  
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = 'Pac109081'
 app.config['MYSQL_DB'] = 'contatos'
@@ -27,12 +27,10 @@ def home():
 def quem_somos():
     return render_template("quem_somos.html")
 
-'''
-@app.route("/contatos")
-def contatos():
-    return render_template("contatos.html")
+#@app.route("/contatos")
+#def contatos():
+    #return render_template("contatos.html")
 
-'''
 
 
 @app.route('/contatos', methods=['GET', 'POST'])
@@ -63,5 +61,5 @@ def users():
     if users > 0:
         userDetails = cur.fetchall()
 
-        return render_template("users.html", userDetails=userDetails)
+        return render_template("usuarios.html", userDetails=userDetails)
 
