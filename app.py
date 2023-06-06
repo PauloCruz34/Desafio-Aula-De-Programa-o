@@ -1,7 +1,8 @@
-from flask import Flask, render_template, request, url_for, jsonify
+from flask import Flask, render_template, request  
+from flask import url_for
+from flask import jsonify
 
 from flask_mysqldb import MySQL
-
 
 
 app = Flask(__name__)
@@ -19,16 +20,15 @@ mysql = MySQL(app)
 
 
 @app.route("/")
-@app.route("/index")
 def home():
     return render_template("index.html")
 
 @app.route("/quemsomos")
-def quem_somos():
+def quemsomos():
     return render_template("quem_somos.html")
 
 #@app.route("/contatos")
-#def contatos():
+# def contatos():
     #return render_template("contatos.html")
 
 
@@ -63,4 +63,3 @@ def users():
 
         return render_template("usuarios.html", userDetails=userDetails)
 
-pip
