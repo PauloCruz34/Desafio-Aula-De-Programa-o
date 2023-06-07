@@ -5,7 +5,8 @@ from flask import jsonify
 from flask_mysqldb import MySQL
 
 
-app=Flask(__name__,template_folder='templates')
+app=Flask(__name__)
+""" Bootstrap(app) """
 
 
 
